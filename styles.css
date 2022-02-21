@@ -1,0 +1,146 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color:  hsl(233, 47%, 7%);
+    color: white;
+}
+
+a { color: hsl(228, 45%, 44%); }
+
+main{
+    
+
+}
+
+.card{
+    width: 60%;
+    margin: auto;
+    height: 300px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.text-side{
+    padding: 40px;
+    width: 50%;
+    background: hsl(244, 38%, 16%);
+}
+
+span{
+   color: hsl(277, 64%, 61%)
+}
+
+.img-side{
+    width: 50%;
+    position: relative;
+}
+
+.img-side img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.saturate{
+    background-color: hsl(277, 64%, 61%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+}
+
+.stats-container{
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+    line-height: 0.5em;
+    margin-top: 20px;
+}
+
+.stats h4{
+    margin-bottom: 0px;
+    padding: 0px;
+    font-weight: bold;
+}
+
+.stats p{
+    text-transform: uppercase;
+    font-size: 7px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h2{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+}
+
+.main-text{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 11px;
+    margin-bottom: 30px;
+}
+
+h4{
+    color: hsl(0, 0%, 100%);
+    
+}
+
+@media(max-width: 800px) {
+    .card{
+        width: 90%;
+        height: 80%;
+        display: flex;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: 50px;
+        flex-direction: column-reverse;
+
+    }
+
+    .img-side{
+        width: 100%;
+        position: relative;
+        height: 250px;
+        order: 2;
+    }
+
+    .text-side{
+        padding: 0px;
+        width: 100%;
+        height: 250px;
+        background: hsl(244, 38%, 16%);
+        order: 1;
+        height: auto;
+    }
+
+    h2{
+        width: 90%;
+        margin: 10px;
+    }
+
+    .main-text{
+        width: 90%;
+        margin: 10px;
+        text-align: center;
+        
+    }
+
+    .stats-container{
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-top: 0%;
+    }
+
+    .stats p{
+        color: hsla(0, 0%, 100%, 0.75);
+        font-family: 'Lexend Deca', sans-serif;
+    }
+}
